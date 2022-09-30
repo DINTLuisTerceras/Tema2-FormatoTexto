@@ -1,0 +1,24 @@
+﻿<Window x:Class="T2_ej5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T2_ej5"
+        mc:Ignorable="d"
+        Title="Formatea tu texto" Height="360" Width="720" Icon="assets/Barkerbaggies-Pool-Ball-Ball-2.ico">
+    <Grid>
+        <CheckBox x:Name="boldCheckBox" Content="Negrita" HorizontalAlignment="Left" Margin="260,100,0,0" VerticalAlignment="Top" FontWeight="Bold" Checked="boldCheckBox_Checked" Unchecked="boldCheckBox_Unchecked"/>
+        <CheckBox x:Name="obliqueCheckBox" Content="Cursiva" HorizontalAlignment="Left" Margin="390,100,0,0" VerticalAlignment="Top" FontStyle="Oblique" Checked="obliqueCheckBox_Checked" Unchecked="obliqueCheckBox_Unchecked"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="60,80,0,0" TextWrapping="Wrap" Text="Texto" VerticalAlignment="Top"/>
+        <TextBox x:Name="userTextBox" HorizontalAlignment="Left" Height="65" Margin="60,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" TextChanged="userTextBox_TextChanged"/>
+
+        <TextBlock x:Name="titleTextBlock" HorizontalAlignment="Left" Margin="60,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="600" FontSize="25" TextAlignment="Center" Background="#FFFEF7A3" TextTrimming="WordEllipsis"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="520,100,0,0" TextWrapping="Wrap" Text="Color de texto" VerticalAlignment="Top"/>
+        <RadioButton x:Name="blueRadioButton" Content="Azul" HorizontalAlignment="Left" Margin="610,80,0,0" VerticalAlignment="Top" GroupName="colors" Checked="blueRadioButton_Checked" IsChecked="True"/>
+        <RadioButton x:Name="redRadioButton" Content="Rojo" HorizontalAlignment="Left" Margin="610,100,0,0" VerticalAlignment="Top" GroupName="colors" Checked="redRadioButton_Checked"/>
+        <RadioButton x:Name="greenRadioButton" Content="Verde" HorizontalAlignment="Left" Margin="610,120,0,0" VerticalAlignment="Top" GroupName="colors" Checked="greenRadioButton_Checked"/>
+
+    </Grid>
+</Window>
